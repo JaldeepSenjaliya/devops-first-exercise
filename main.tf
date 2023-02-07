@@ -23,7 +23,7 @@ resource "azure_rg" "my_first_resource_group" {
 
 resource "azurerm_resource_group" "rg" {
   location = "eastus"
-  name     = random_pet.my_first_resource_group.id
+  name     = azure_rg.my_first_resource_group.id
 }
 
 
